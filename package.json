@@ -1,12 +1,15 @@
 {
-  "name": "3dfolio",
+  "name": "Portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://jihanerached.github.io/Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
@@ -21,7 +24,8 @@
     "react-simple-typewriter": "^5.0.1",
     "react-tilt": "^0.1.4",
     "react-vertical-timeline-component": "^3.6.0",
-    "three": "^0.149.0"
+    "three": "^0.149.0",
+    "gh-pages": "^3.2.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
