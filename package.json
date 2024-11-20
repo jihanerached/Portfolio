@@ -6,8 +6,9 @@
   "homepage": "https://jihanerached.github.io/Portfolio",
 "scripts": {
   "predeploy": "npm run build --legacy-peer-deps",
-  "deploy": "gh-pages -d build --legacy-peer-deps"
+  "deploy": "gh-pages -d dist --legacy-peer-deps"
 }
+
 
 ,
   "dependencies": {
