@@ -8,7 +8,7 @@ import {
   docker,
   figma,
   git,
-  html,red,
+  html,
   java,
   javascript,
   jenkins,
@@ -20,9 +20,8 @@ import {
   python,
   reactjs,
   tailwind,
-  unity,
-  paincare,
-  web,smart,
+
+  web,
   white
 } from "../assets";
 
@@ -170,111 +169,55 @@ const projects = [
     description:
       "A mobile and web application designed for endometriosis patients, offering tools to track pain progression and analyze factors influencing it. Integrated CI/CD pipelines to automate testing and deployment.",
     tags: [
-      {
-        name: "spring boot",
-        color: "green-text-gradient",
-      },
-      {
-        name: "jenkins",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "docker",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "chart.js",
-        color: "orange-text-gradient",
-      },
+      { name: "spring boot", color: "green-text-gradient" },
+      { name: "jenkins", color: "blue-text-gradient" },
+      { name: "docker", color: "pink-text-gradient" },
+      { name: "chart.js", color: "orange-text-gradient" },
     ],
-    image: paincare, // Replace with the appropriate image path
-    source_code_link: "https://github.com/jihanerached/PainCare", // Replace with actual link
+    source_code_link: "https://github.com/jihanerached/PainCare", 
   },
   {
     name: "Smart Fridge",
     description:
       "An IoT-enabled smart fridge with real-time monitoring via a mobile app. Features include stock visualization, freshness prediction using machine learning, and remote control through Firebase.",
     tags: [
-      {
-        name: "android studio",
-        color: "green-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "python",
-        color: "pink-text-gradient",
-      },
-   
+      { name: "android studio", color: "green-text-gradient" },
+      { name: "firebase", color: "blue-text-gradient" },
+      { name: "python", color: "pink-text-gradient" },
     ],
-    image: smart, // Replace with the appropriate image path
-    source_code_link: "https://github.com/jihanerached/SmartFridge", // Replace with actual link
+    source_code_link: "https://github.com/jihanerached/SmartFridge", 
   },
   {
     name: "Word Explorer",
     description:
       "A Unity-based game designed to aid dyslexic children in improving their reading and writing skills. Integrated 4 mini-games into one cohesive platform, focusing on engagement and educational value.",
     tags: [
-      {
-        name: "unity",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "game_design",
-        color: "green-text-gradient",
-      },
-      {
-        name: "c#",
-        color: "pink-text-gradient",
-      },
-      
-  
+      { name: "unity", color: "blue-text-gradient" },
+      { name: "game_design", color: "green-text-gradient" },
+      { name: "c#", color: "pink-text-gradient" },
     ],
-    image: unity, // Replace with the appropriate image path
-    source_code_link: "https://github.com/jihanerached/World-Island", // Replace with actual link
-    demo_video_link: "https://vimeo.com/1030366828?share=copy", // Replace with the actual link to your demo
+    source_code_link: "https://github.com/jihanerached/World-Island", 
+    demo_video_link: "https://vimeo.com/1030366828?share=copy",
   },
-  
   {
     name: "AjiNthriftiw - Online Bookstore",
     description:
       "An app developed with Laravel and Bootstrap for buying and selling second-hand books. Features a seamless browsing experience, secure checkout, and user management.",
     tags: [
-      {
-        name: "laravel",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "bootstrap",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "php",
-        color: "green-text-gradient",
-      },
+      { name: "laravel", color: "pink-text-gradient" },
+      { name: "bootstrap", color: "blue-text-gradient" },
+      { name: "php", color: "green-text-gradient" },
     ],
-    image: "/src/assets/tech/aji.jpeg", // Replace with the actual path in your public folder
   },
   {
     name: "RedDrop - Blood Donation App",
     description:
       "A platform to facilitate blood donations by connecting donors and recipients. Features include donor registration, blood inventory tracking, and request management.",
     tags: [
-      {
-        name: "Java",
-        color: "green-text-gradient",
-      },
-      {
-        name: "MySQL",
-        color: "blue-text-gradient",
-      },
-
+      { name: "Java", color: "green-text-gradient" },
+      { name: "MySQL", color: "blue-text-gradient" },
     ],
-    image: "/src/assets/tech/red.png", // Leading slash for correct public folder reference
   },
-  
 ];
 
 export { experiences, projects, services, technologies, testimonials };

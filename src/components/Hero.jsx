@@ -32,7 +32,7 @@ const Hero = () => {
           {/* Adding GitHub and LinkedIn Links with Icons */}
           <div className="mt-4 flex gap-6">
             <a
-              href="https://github.com/yourusername" // Replace with your GitHub URL
+              href="https://github.com/jihanerached" // Replace with your GitHub URL
               target="_blank"
               rel="noopener noreferrer"
               className="text-white text-lg hover:text-[#915EFF] transition duration-300"
@@ -40,7 +40,7 @@ const Hero = () => {
               <FaGithub size={30} />
             </a>
             <a
-              href="https://www.linkedin.com/in/yourusername" // Replace with your LinkedIn URL
+              href="https://www.linkedin.com/in/jihane-rached/" // Replace with your LinkedIn URL
               target="_blank"
               rel="noopener noreferrer"
               className="text-white text-lg hover:text-[#915EFF] transition duration-300"

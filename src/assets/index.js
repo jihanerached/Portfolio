@@ -18,11 +18,9 @@ import akwa from "./tech/akwa.png";
 import python from "./tech/python.png";
 import jenkins from "./tech/jenkins.png";
 import boa from "./tech/boa.png";
-import paincare from "./tech/paincare.png";
-import unity from "./tech/unity.jpg";
-import smart from "./tech/smart.png";
 import white from "./tech/white.png";
-import red from "./tech/red.png";
+
+
 
 
 
@@ -57,6 +55,6 @@ export {
   nodejs,
   reactjs,
   redux, shopify,
-  starbucks, tailwind, tesla, threejs, tripguide, typescript, web, mysql, python,jenkins,akwa,boa,paincare,unity,smart,white,red
+  starbucks, tailwind, tesla, threejs, tripguide, typescript, web, mysql, python,jenkins,akwa,boa,white
 };
 

@@ -8,14 +8,11 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-
-
 const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
-
       </motion.div>
 
       <div className="w-full flex">
@@ -23,7 +20,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-        The following projects showcase my skills and experience through practical, real-world examples. Each project is briefly described, with links to code repositories and live demos included where available. These projects highlight my ability to tackle complex challenges, adapt to various technologies, and manage projects effectively.
+          The following projects showcase my skills and experience through practical, real-world examples. Each project is briefly described, with links to code repositories and live demos included where available. These projects highlight my ability to tackle complex challenges, adapt to various technologies, and manage projects effectively.
         </motion.p>
       </div>
 
@@ -35,6 +32,7 @@ const Works = () => {
     </>
   );
 };
+
 const ProjectCard = ({
   index,
   name,
@@ -44,6 +42,26 @@ const ProjectCard = ({
   source_code_link,
   demo_video_link, // Make sure this is passed to the component
 }) => {
+  // Dynamically handle the image based on project name
+  const getImageSrc = (name) => {
+    // Check the project name and return the appropriate image path
+    switch (name) {
+      case "AjiNthriftiw - Online Bookstore":
+        return "/aji.jpeg"; 
+      case "PainCare":
+        return "/paincare.png"; 
+      case "Word Explorer":
+          return "/unity.jpg"; 
+      case "Smart Fridge":
+            return "/smart.png"; 
+      case "RedDrop - Blood Donation App":
+              return "/red.png"; 
+      default:
+              return "/default-image.png";
+      
+    }
+  };
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -56,7 +74,7 @@ const ProjectCard = ({
       >
         <div className="relative w-full h-[230px]">
           <img
-            src={image}
+            src={getImageSrc(name)} // Use the dynamic image source function here
             alt="project_image"
             className="w-full h-full object-cover rounded-2xl"
           />
@@ -107,6 +125,5 @@ const ProjectCard = ({
     </motion.div>
   );
 };
-
 
 export default SectionWrapper(Works, "works");
